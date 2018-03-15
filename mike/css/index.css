@@ -1,0 +1,373 @@
+
+
+
+/*nav部分*/
+.mik_nav {
+   background-color: #88c5e1;
+   border-color: #e7e7e7;
+   height:70px;
+   padding-top: 15px;
+}
+.mik_nav .navbar-header a{
+}
+.mik_nav .navbar-header img{
+	
+	height: 40px;
+}
+.mik_nav .navbar-brand {
+  color: #777;
+}
+.mik_nav .navbar-brand:hover,
+.mik_nav .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.mik_nav .navbar-text {
+  color: #777;
+}
+.mik_nav .navbar-nav > li > a {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.mik_nav .glyphicon-menu-hamburger{
+	color: white;
+	font-size: 36px;
+}
+.mik_nav .dropdown-menu>li{
+	padding: 5px;
+}
+.mik_nav .dropdown-menu>li>a{
+	height: 40px;
+	line-height: 40px;
+	border-left: 2px solid black;
+	
+}
+.mik_nav .dropdown-menu>li>a:hover{
+	
+	border-left: 10px solid blue;
+	
+}
+.mik_nav .navbar-nav > li > a:hover,
+.mik_nav .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.mik_nav .navbar-nav > .active > a,
+.mik_nav .navbar-nav > .active > a:hover,
+.mik_nav .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.mik_nav .navbar-nav > .disabled > a,
+.mik_nav .navbar-nav > .disabled > a:hover,
+.mik_nav .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.mik_nav .navbar-toggle {
+  border-color: #ddd;
+}
+.mik_nav .navbar-toggle:hover,
+.mik_nav .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.mik_nav .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.mik_nav .navbar-collapse,
+.mik_nav .navbar-form {
+  border: none;
+}
+.mik_nav .navbar-nav > .open > a,
+.mik_nav .navbar-nav > .open > a:hover,
+.mik_nav .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .mik_nav .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .mik_nav .navbar-nav .open .dropdown-menu > li > a:hover,
+  .mik_nav .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .mik_nav .navbar-nav .open .dropdown-menu > .active > a,
+  .mik_nav .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .mik_nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .mik_nav .navbar-nav .open .dropdown-menu > .disabled > a,
+  .mik_nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .mik_nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.mik_nav .navbar-link {
+  color: #777;
+}
+.mik_nav .navbar-link:hover {
+  color: #333;
+}
+.mik_nav .btn-link {
+  color: #777;
+}
+.mik_nav .btn-link:hover,
+.mik_nav .btn-link:focus {
+  color: #333;
+}
+.mik_nav .btn-link[disabled]:hover,
+fieldset[disabled] .mik_nav .btn-link:hover,
+.mik_nav .btn-link[disabled]:focus,
+fieldset[disabled] .mik_nav .btn-link:focus {
+  color: #ccc;
+}
+/*登录界面*/
+.mik_login{
+	background: url(../images/2.jpg);
+	padding-top: 90px;
+	padding-bottom: 50px;
+}
+.mik_nav-tabs {
+  padding: 20px;
+}
+.mik_nav-tabs > li {
+  float: left;
+  padding: 5px;
+  margin-bottom: -1px;
+  
+}
+.mik_nav-tabs > li > a {
+  margin-right: 2px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.mik_nav-tabs > li > a:hover {
+	border-bottom: 2px solid white;
+   background: none;
+}
+.mik_nav-tabs > li.active > a,
+.mik_nav-tabs > li.active > a:hover,
+.mik_nav-tabs > li.active > a:focus {
+  color: white
+  cursor: default;
+  border-bottom: 2px solid white;
+
+}
+.mik_loginto h3{
+	color: #fff;
+	padding: 10px;
+}
+.mik_nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.mik_nav-tabs.nav-justified > li {
+  float: none;
+}
+.mik_nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.mik_nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .mik_nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .mik_nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.mik_nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.mik_nav-tabs.nav-justified > .active > a,
+.mik_nav-tabs.nav-justified > .active > a:hover,
+.mik_nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .mik_nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .mik_nav-tabs.nav-justified > .active > a,
+  .mik_nav-tabs.nav-justified > .active > a:hover,
+  .mik_nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+.mik_login .checkbox{
+	padding-left: 20px;
+	color: #fff;
+}
+.mik_login .checkbox>span{
+	float: right;
+}
+/*inner部分*/
+.mik_inner{
+	background: #eeede8;
+}
+.mik_inner .row{
+	margin-right: 0px;
+}
+.mik_inner .carousel-inner div{
+	padding: 15px ;
+}
+.mik_inner .carousel-inner img{
+	width: 100%;
+}
+.mik_inner .carousel-inner .carousel-caption{
+	bottom: 100px;
+	font-size:22px ;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.mik_inner .carousel-inner p{
+	color: #999;
+	margin: 8px 0 20px 0;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+}
+.item .captio{
+	background: #f5f5f5;
+
+}
+.mik_banner{
+	background: #fff;
+}
+.hot .mik_banner{
+	margin-top: 20px;
+	padding: 40px 25px 30px 25px;
+}
+.mik_banner>span{
+	border-left: 2px solid #88c5e1;
+	display: block;
+	padding:0px 16px;
+	font-size: 20px;
+	color: #747770;
+	margin-bottom: 20px;
+}
+.mik_banner ol li{
+	border-color: #f8c038;
+	
+}
+.mik_banner ol .active{
+	background: #f8c038;
+}
+/*最热门课程榜*/
+.hotclass{
+	margin-top: 20px;
+	background: #fff;
+	padding: 40px 25px 30px 25px;
+}
+.hotclass>span{
+	border-left: 3px solid #88c5e1;
+	display: block;
+	padding:0px 16px;
+	font-size: 20px;
+	color: #747770;
+	margin-bottom: 20px;
+	line-height: 36px;
+}
+.hotclass>span>a {
+	margin-left: 5px;
+}
+.hotclass ul{
+	list-style: none;
+}
+.hotclass ul li {
+	padding: 10px;
+}
+.hotclass ul li .box{
+	background: #f5f5f5;
+	padding: 50px 20px;
+
+}
+.hotclass ul li .card_icon{
+	margin-left: 40%;
+	width: 50px;
+	height: 55px;
+	background: url(../images/philosophy.png);
+	background-size: 100%;
+}
+.hotclass .box .hidden-md {
+	text-align: center;
+}
+.hotclass .box>a{
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: black;
+	font-size: 20px;
+	margin: 20px;
+	
+}
+.hotclass .box .hidden-md a{
+	
+	display: inline-block;
+	background:#88c5e1 ;
+	color: #fff;
+	margin: 0 4px 4px 0;
+	font-size: 12px;
+	padding: 3px;
+	border-radius: 4px
+}
+.hotclass .box .score img{
+	width: 12px;
+}
+.hotclass .box .score{
+	margin: 10px;
+}
+
+
+/*热门标签*/
+.slide{
+	margin-top: 20px;
+	background: #fff;
+	padding: 40px 25px 30px 25px;
+}
+.slide>span{
+	border-left: 3px solid #88c5e1;
+	display: block;
+	padding:0px 16px;
+	font-size: 20px;
+	color: #747770;
+	margin-bottom: 20px;
+	line-height: 36px;
+}
+.slide .tag-section a{
+	display: inline-block;
+	background:#88c5e1 ;
+	color: #fff;
+	margin: 0 4px 4px 0;
+	padding: 5px;
+	border-radius: 4px
+}
+/*footer 部分*/
+footer{
+	padding-top: 20px;
+	background: #eeece1;
+}
+footer .media a{
+	display: block;
+	width: 60px;
+}
+footer .media img{
+	width: 100%;
+}
+footer .footer-info{
+	text-align: center;
+}

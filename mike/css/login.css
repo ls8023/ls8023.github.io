@@ -1,0 +1,36 @@
+.mik_inner{
+	margin-top: 90px;
+	padding: 90px 10px;
+	background: #fff
+	
+}
+.mik_inner .row>div{
+	background: #eeeeee;
+	padding: 35px 85px 20px;
+}
+.mik_inner .row li a{
+	color: #000000;
+}
+.mik_nav-tabs > li {
+  float: left;
+  padding: 5px;
+  margin-bottom: -1px;
+  
+}
+.mik_nav-tabs > li > a {
+  margin-right: 2px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.mik_nav-tabs > li > a:hover {
+	border-bottom: 2px solid #88c5e1;
+   background: none;
+}
+.mik_nav-tabs > li.active > a,
+.mik_nav-tabs > li.active > a:hover,
+.mik_nav-tabs > li.active > a:focus {
+  color: white
+  cursor: default;
+  border-bottom: 2px solid #88c5e1;
+
+}

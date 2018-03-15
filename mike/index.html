@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>米课</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+
+	<body>
+		<!--导航栏-->
+		<header class="header">
+			<nav class="navbar mik_nav navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+							<div class="navbar-header navbar-left">
+								<a class="navbar-brand-mc" href="index.html">
+									<img src="images/Brand.png" alt="logo" />
+								</a>
+							</div>
+						</div>
+						<div class="hidden-xs visible-sm-block col-sm-2">
+							<div class="navbar-header navbar-left">
+								<a class="navbar-brand-mc" href="index.html">
+									<img src="images/Brand-M.png" alt="logo" />
+								</a>
+							</div>
+						</div>
+						<div class="visible-xs-block col-xs-2">
+							<div class="navbar-header navbar-left">
+								<a class="navbar-brand-mc" href="index.html">
+									<img src="images/Brand-S.png" alt="logo" />
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-8 col-sm-5 col-md-5 col-lg-5">
+							<form class="navbar-form-mc" method="get" action="/course/search" role="search">
+								<div class="input-group input-group-nav">
+									<input type="text" class="form-control" id="input-search" name="key" placeholder="查找课程...">
+										<span class="input-group-addon" id="basic-addon2"> <a href="sreach.html"><span class="glyphicon glyphicon-zoom-in"></span></a></span>
+								</div>
+							</form>
+						</div>
+						<div class="hidden-xs col-sm-5 col-md-4 col-lg-4">
+							<div id="navbar" class="navbar-collapse collapse">
+								<ul class="nav navbar-nav pull-right">
+									<li id="nav-index">
+										<a href="index.html">首页</a>
+									</li>
+									<li id="nav-course">
+										<a href="map.html">地图</a>
+									</li>
+									<li id="nav-notice">
+										<a href="Notice.html">公告</a>
+									</li>
+									<li>
+										<a href="enroll.html">登录</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="visible-xs-block col-xs-2">
+							<div class="nav nav-hamburger pull-right">
+								<a href="#ham" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+								</a>
+								<ul class="dropdown-menu pull-right">
+									<li>
+										<a href="index.html">首页</a>
+									</li>
+									<li>
+										<a href="map.html">地图</a>
+									</li>
+									<li id="xs-nav-notice">
+										<a href="Notice.html">公告</a>
+									</li>
+									<li>
+										<a href="enroll.html">登录</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!--登录界面-->
+		<div class="mik_login">
+			<div class="container">
+				<div class="row">
+					<div class="mik_logo col-md-5 hidden-xs col-sm-4 text-center">
+						<img src="images/MiLogo.png" />
+						<br />
+						<img src="images/miTitle.png" />
+					</div>
+					<div class="mik_loginto col-sm-6 col-md-4 text-center">
+						<h3>登录米课</h3>
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">
+								<form>
+									<div class="form-group">
+
+										<input type="email" class="form-control username" placeholder="邮箱">
+									</div>
+									<div class="form-group">
+
+										<input type="password" class="form-control password" placeholder="密码">
+									</div>
+
+									<div class="checkbox">
+
+										<input type="checkbox" checked="checked"> 记住我
+										<span>忘记密码</span>
+									</div>
+									<button type="submit" class="btn btn-default btn-block btn-info " id="login-btn">登录</button>
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--轮播图-->
+		<div class="mik_inner">
+			<div class="row container-fluid">
+				<div class="hot col-md-8">
+					<div class="mik_banner">
+						<span>新课速递</span>
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active row">
+									<div class="col-sm-6 col-xs-12">
+										<img src="images/film.jpg" alt="...">
+										<div class="carousel-caption">
+											感受文学与电影交融之魅力
+										</div>
+										<p>感受文学与电影交融之魅力</p>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<img src="images/mineral.jpg" alt="...">
+										<div class="carousel-caption">
+											看地表双雄谁与争锋
+										</div>
+										<p>看地表双雄谁与争锋</p>
+									</div>
+								</div>
+								<div class="item ">
+									<div class="col-sm-6 col-xs-12">
+										<img src="images/pollution.jpg" alt="...">
+										<div class="carousel-caption">
+											我们的健康去了哪里
+										</div>
+										<p c>我们的健康去了哪里</p>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<img src="images/uncertainty.jpg" alt="...">
+										<div class="carousel-caption">
+											你真的了解你所做的决策吗
+										</div>
+										<p>你真的了解你所做的决策吗</p>
+									</div>
+								</div>
+								<div class="item ">
+									<div class="col-sm-6 col-xs-12">
+										<img src="images/usa.jpg" alt="...">
+										<div class="carousel-caption">
+											那时的我们
+										</div>
+										<p>那时的我们</p>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<img src="images/biology.jpg" alt="...">
+										<div class="carousel-caption">
+											走进诺贝尔奖
+										</div>
+										<p>走进诺贝尔奖</p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="hotclass">
+						<span class="h4">最热门课程榜<a href="#"><span class="small">更多》</span></a>
+						</span>
+						<ul class="row">
+							<li class="col-md-4 col-sm-6 col-xs-12">
+								<div class="box">
+									<div class="card_icon"></div>
+									<a class="" href="">俄罗斯文学经典的当代意义</a>
+									<div class="hidden-md text-center">
+										<a class="" href="">文学院</a>
+										<a class="" href="">董晓</a>
+									</div>
+									<div class="score text-center">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<span class="f-12 f-sub star ">4.8分</span>
+									</div>
+									<div class="f-12 text-center">2学分
+										<a href="/course/278#anchor-comments">52评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12">
+								<div class="box">
+									<div class="card_icon"></div>
+									<a class="f-18 f-hot f-weight card-name" href="/course/148">俄罗斯文学经典的当代意义</a>
+									<div class="hidden-md">
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/445">文学院</a>
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/447">董晓</a>
+									</div>
+									<div class="score text-center">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<span class="f-12 f-sub star">4.8分</span>
+									</div>
+									<div class="f-12 text-center">2学分
+										<a href="/course/278#anchor-comments">52评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12">
+								<div class="box">
+									<div class="card_icon"></div>
+									<a class="f-18 f-hot f-weight card-name" href="/course/148">俄罗斯文学经典的当代意义</a>
+									<div class="hidden-md">
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/445">文学院</a>
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/447">董晓</a>
+									</div>
+									<div class="score text-center">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<span class="f-12 f-sub star">4.8分</span>
+									</div>
+									<div class="f-12 text-center">2学分
+										<a href="/course/278#anchor-comments">52评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12">
+								<div class="box">
+									<div class="card_icon"></div>
+									<a class="f-18 f-hot f-weight card-name" href="/course/148">俄罗斯文学经典的当代意义</a>
+									<div class="hidden-md">
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/445">文学院</a>
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/447">董晓</a>
+									</div>
+									<div class="score text-center">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<span class="f-12 f-sub star">4.8分</span>
+									</div>
+									<div class="f-12 text-center">2学分
+										<a href="/course/278#anchor-comments">52评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12">
+								<div class="box">
+									<div class="card_icon"></div>
+									<a class="f-18 f-hot f-weight card-name" href="/course/148">俄罗斯文学经典的当代意义</a>
+									<div class="hidden-md">
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/445">文学院</a>
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/447">董晓</a>
+									</div>
+									<div class="score text-center">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<span class="f-12 f-sub star">4.8分</span>
+									</div>
+									<div class="f-12 text-center">2学分
+										<a href="/course/278#anchor-comments">52评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="col-md-4 col-sm-6 col-xs-12">
+								<div class="box">
+									<div class="card_icon"></div>
+									<a class="f-18 f-hot f-weight card-name" href="/course/148">俄罗斯文学经典的当代意义</a>
+									<div class="hidden-md">
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/445">文学院</a>
+										<a class="tag tag-info tag-sm" href="/Course/tag/id/447">董晓</a>
+									</div>
+									<div class="score text-center">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<img src="images/star.png">
+										<span class="f-12 f-sub star">4.8分</span>
+									</div>
+									<div class="f-12 text-center">2学分
+										<a href="/course/278#anchor-comments">52评论</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="slide col-md-4">
+					<span>热门标签</span>
+					<div class="tag-section">
+						<h5>学分</h5>
+						<div class="">
+							<a href="">2学分</a>
+							<a href="">3学分</a>
+							<a href="">2学分</a>
+						</div>
+					</div>
+					<div class="tag-section">
+						<h5>类型</h5>
+						<div class="">
+							<a href="">研讨课</a>
+							<a href="">通识课</a>
+							<a href="">公选课</a>
+							<a href="">悦读计划</a>
+							<a href="">文化素质课</a>
+							<a href="">优秀文化素质课</a>
+							<a href="">就业创业课</a>
+						</div>
+					</div>
+					<div class="tag-section">
+						<h5>院系</h5>
+						<div class="">
+							<a href="">文学院</a>
+							<a href="">历史学系</a>
+							<a href="">创新创业学院</a>
+							<a href="">哲学系</a>
+							<a href="">信息管理学院</a>
+							<a href="">环境学院</a>
+							<a href="">法学院</a>
+							<a href="">国际学院</a>
+							<a href="">社会学院</a>
+							<a href="">外国语学院</a>
+						</div>
+					</div>
+					<div class="tag-section">
+						<h5>院系</h5>
+						<div class="">
+							<a href="">其他</a>
+							<a href="">历史</a>
+							<a href="">计算机</a>
+							<a href="">生物</a>
+							<a href="">社会</a>
+							<a href="">政治</a>
+							<a href="">艺术</a>
+							<a href="">创新创业</a>
+							<a href="">经济</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--foot部分-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/MiLogo.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">关于米课</h4>
+								<p>原由米课团队开发运营，后交由小百合工作室进行全新改版与功能丰富，致力于搭建帮助南大各院系同学选 好课程，分享感受，互动交友的校内平台。感谢同学们的大力支持。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/LilyStudio.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">关于小百合工作室</h4>
+								<p>原工作室成立于2000年，是由南京大学网络爱好者自发组织的一个学生团体，致力于传播校园网络文化，促进校园 网络建设，服务广大同学，并为爱好网络和计算机科学与技术的同学提供一个交流学习、共同提高的平台。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-info">
+					<p>
+						<a href="http://www.nju.edu.cn">南大首页</a>
+						<a href="http://jw.nju.edu.cn">南大教务</a>
+						<a role="button" href="#" data-toggle="modal" data-target="#modal-feedback">意见反馈</a>
+						<a class="special-link" href="/sorter/">米课分一分^ ^</a>
+					</p>
+					<p>Designed &developed by CPC, Hane, ZingSS, SuperLatte, Christine & Polaris.</p>
+					<p>Copyright &copy; Lily Studio, 2015-2016</p>
+				</div>
+			</div>
+			</div>
+		</footer>
+		<script src="lib/jquery.js"></script>
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="lib/template-native.js"></script>
+		<script src="js/swipe.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

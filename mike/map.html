@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>米课</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/map.css"/>
+	</head>
+
+	<body>
+		<!--导航栏-->
+		<header class="header">
+			<nav class="navbar mik_nav navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+							<div class="navbar-header navbar-left">
+								<a class="navbar-brand-mc" href="index.html">
+									<img src="images/Brand.png" alt="logo" />
+								</a>
+							</div>
+						</div>
+						<div class="hidden-xs visible-sm-block col-sm-2">
+							<div class="navbar-header navbar-left">
+								<a class="navbar-brand-mc" href="index.html">
+									<img src="images/Brand-M.png" alt="logo" />
+								</a>
+							</div>
+						</div>
+						<div class="visible-xs-block col-xs-2">
+							<div class="navbar-header navbar-left">
+								<a class="navbar-brand-mc" href="index.html">
+									<img src="images/Brand-S.png" alt="logo" />
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-8 col-sm-5 col-md-5 col-lg-5">
+							<form class="navbar-form-mc" method="get" action="/course/search" role="search">
+								<div class="input-group input-group-nav">
+									<input type="text" class="form-control" id="input-search" name="key" placeholder="查找课程...">
+										<span class="input-group-addon" id="basic-addon2"> <span class="glyphicon glyphicon-zoom-in"></span></span>
+								</div>
+							</form>
+						</div>
+						<div class="hidden-xs col-sm-5 col-md-4 col-lg-4">
+							<div id="navbar" class="navbar-collapse collapse">
+								<ul class="nav navbar-nav pull-right">
+									<li id="nav-index">
+										<a href="index.html">首页</a>
+									</li>
+									<li id="nav-course">
+										<a href="map.html">地图</a>
+									</li>
+									<li id="nav-notice">
+										<a href="Notice.html">公告</a>
+									</li>
+									<li>
+										<a href="enroll.html">登录</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="visible-xs-block col-xs-2">
+							<div class="nav nav-hamburger pull-right">
+								<a href="#ham" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+								</a>
+								<ul class="dropdown-menu pull-right">
+									<li>
+										<a href="/">首页</a>
+									</li>
+									<li>
+										<a href="map.html">地图</a>
+									</li>
+									<li id="xs-nav-notice">
+										<a href="Notice.html">公告</a>
+									</li>
+									<li>
+										<a href="enroll.html">登录</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<!--轮播图-->
+		<div class="mik_inner">
+			<div class="input-group input-group-nav">
+				<input type="text" class="form-control" id="map-search" name="key" placeholder="输入查找的地址">
+				<span class="input-group-addon" id="btn">查询</span>
+			</div>
+			<div class="map">
+					<div id="allmap"></div>
+					<div id="r-result"></div>
+			</div>
+		</div>
+		<!--foot部分-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/MiLogo.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">关于米课</h4>
+								<p>原由米课团队开发运营，后交由小百合工作室进行全新改版与功能丰富，致力于搭建帮助南大各院系同学选 好课程，分享感受，互动交友的校内平台。感谢同学们的大力支持。
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="media">
+							<div class="media-left media-middle">
+								<a href="#">
+									<img class="media-object" src="images/LilyStudio.png" alt="...">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">关于小百合工作室</h4>
+								<p>原工作室成立于2000年，是由南京大学网络爱好者自发组织的一个学生团体，致力于传播校园网络文化，促进校园 网络建设，服务广大同学，并为爱好网络和计算机科学与技术的同学提供一个交流学习、共同提高的平台。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-info">
+					<p>
+						<a href="http://www.nju.edu.cn">南大首页</a>
+						<a href="http://jw.nju.edu.cn">南大教务</a>
+						<a role="button" href="#" data-toggle="modal" data-target="#modal-feedback">意见反馈</a>
+						<a class="special-link" href="/sorter/">米课分一分^ ^</a>
+					</p>
+					<p>Designed &developed by CPC, Hane, ZingSS, SuperLatte, Christine & Polaris.</p>
+					<p>Copyright &copy; Lily Studio, 2015-2016</p>
+				</div>
+			</div>
+			</div>
+		</footer>
+		<script src="lib/jquery.js"></script>
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="lib/template-native.js"></script>
+		<script src="js/swipe.js"></script>
+		<!--<script src="js/index.js"></script>?-->
+		<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=KG5QWyNXednF6ylkZWNFqE9Y"></script>
+		<script type="text/javascript">
+			// 百度地图API功能
+			var input =document.querySelector('#map-search');
+			var btn =document.querySelector('#btn');
+			var map = new BMap.Map("allmap"); 
+			console.log(btn)
+			map.centerAndZoom(new BMap.Point(113.466871,23.153683), 14);
+			var local = new BMap.LocalSearch(map, {
+				renderOptions:{map: map}
+			});
+			btn.onclick =function(){
+				
+				local.search(input.value);
+				
+			}
+			map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+	map.enableContinuousZoom(); 
+		</script>
+	</body>
+
+</html>

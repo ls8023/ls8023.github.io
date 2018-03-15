@@ -1,0 +1,97 @@
+.mik_inner{
+	padding-top: 70px;
+}
+.Notice_nav-tabs > li {
+}
+.Notice_nav-tabs > li > a {
+
+  margin-right: 2px;
+  color: #606163;
+  line-height: 1.42857143;
+border-left: 2px solid #7d7d7d;
+}
+.Notice_nav-tabs > li > a:hover {
+	background: #fff;
+	border-left: 10px solid #88c5e1;
+	color: #88c5e1;
+}
+.Notice_nav-tabs > li.active > a{
+	color: #606163;
+	cursor: default;
+	border-left: 3px solid #88c5e1;
+	
+}
+.Notice_nav-tabs > li.active > a:hover,
+.Notice_nav-tabs > li.active > a:focus {
+	border-left: 10px solid #88c5e1;
+}
+.Notice_nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.Notice_Notice_nav-tabs.nav-justified > li {
+  float: none;
+}
+.Notice_nav-tabs.nav-justified > li > a {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.Notice_nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .Notice_nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .Notice_nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.Notice_nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.Notice_nav-tabs.nav-justified > .active > a,
+.Notice_nav-tabs.nav-justified > .active > a:hover,
+.Notice_nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .Notice_nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .Notice_nav-tabs.nav-justified > .active > a,
+  .Notice_nav-tabs.nav-justified > .active > a:hover,
+  .Notice_nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff;
+  }
+}
+.Notice_text li{
+	list-style: none;
+}
+.tab-pane{
+	padding: 20px 30px;
+}
+.tab-pane>span{
+	font-size: 20px;
+	display: block;
+	padding: 10px 15px;
+	border-left: 3px solid #88C5E1;
+}
+ .Notice_text mark{
+	    color: #f8c038
+}
+.item .col-md-10 h3{
+	color: #88C5E1;
+	font-size: 14px;
+	margin: 10px 0;
+	
+}
+.item .col-md-10>div>p{
+	color:#b5b5b5 ;
+	padding: 15px 15px;
+	border-left: 5px solid #ccc;
+}
